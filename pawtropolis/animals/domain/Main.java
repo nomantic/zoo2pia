@@ -6,6 +6,7 @@ import game.manager.Player;
 import game.manager.Room;
 import game.manager.direction.Direction;
 import game.manager.direction.GameManager;
+import game.manager.direction.InputControl;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        Player p1 = new Player("noman", 100);
+        Player p1 = new Player(InputControl.userInput(), 100);
 
         //instances of Room/ all the rooms
         Room room1 = new Room("room1 juju", Main.animalmethod());

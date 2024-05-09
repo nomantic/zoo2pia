@@ -28,7 +28,7 @@ public class Player {
     }
 
     //gets user input
-    public String initializePlayer(){
+    public static String initializePlayer(){
         Scanner scr=new Scanner(System.in);
         String player= scr.nextLine();
         System.out.println("Hi player! welcome to the game, what is your name? " + player );

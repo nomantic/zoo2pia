@@ -12,6 +12,30 @@ public class GameManager {
         this.player = player;
     }
 
+    public void startGame() {
+        Room currentRoom = room;
+        boolean gameEnded = false;
+
+        while (!gameEnded) {
+            String input;
+            System.out.println("Where are you going to go?");
+            System.out.print(">");
+            input = Player.initializePlayer();
+
+            /*
+             * Inserire qui la gestione degli altri comandi
+             */
+
+
+            if (input.equals("exit")) {
+                gameEnded = true;
+            }
+        }
+    }
+
+
+
+
     //getters and setters
     public Room getRoom() {
         return room;

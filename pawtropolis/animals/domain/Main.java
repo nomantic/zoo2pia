@@ -25,6 +25,7 @@ public class Main {
         AnimalList animalList = new AnimalList();
         animalList.add(animal1);
 
+        //instances of Room/ all the rooms
         Room room1 = new Room("room1 juju", animalList);
         Room room2 = new Room("room2 aron", animalList);
         Room room3 = new Room("room3 ellie", animalList);

@@ -20,7 +20,7 @@ public class GameManager {
             String input;
             System.out.println("Where are you going to go?");
             System.out.print(">");
-            input = Player.initializePlayer();
+            input = InputControl.userInput();
 
             /*
              * Inserire qui la gestione degli altri comandi

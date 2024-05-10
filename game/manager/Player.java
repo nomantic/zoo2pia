@@ -1,5 +1,7 @@
 package game.manager;
 
+import java.util.Scanner;
+
 public class Player {
     private String name;
     private int lifePoints;
@@ -24,5 +26,7 @@ public class Player {
     public void setLifePoints(int lifePoints) {
         this.lifePoints = lifePoints;
     }
+
+
 
 }

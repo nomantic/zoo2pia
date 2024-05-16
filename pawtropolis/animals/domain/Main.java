@@ -50,7 +50,6 @@ public class Main {
 
 
         Room r1 = room1.getRoomMap("north");
-        Room.getCRoom().look();
 
     }
 

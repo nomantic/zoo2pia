@@ -21,7 +21,6 @@ public class Room {
         this.name = name;
         this.itemListRoom = new ArrayList<>();
         this.roomMap = new HashMap<>();
-        this.gameManager = new GameManager();
         this.animalList = animalList;
 
     }
@@ -55,12 +54,11 @@ public class Room {
 
     public Room getRoomMap(String s) {
         Room newRoom = this.roomMap.get(s);
-        gameManager.setCurrentRoom(newRoom);
         return newRoom;
     }
 
-    public static Room getCRoom() {
-        return gameManager.getCurrentRoom();
+    public static void getCRoom() {
+
     }
 
 

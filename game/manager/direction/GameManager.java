@@ -18,14 +18,19 @@ public class GameManager {
 
         while (!gameEnded) {
             String input;
-            System.out.println("Where are you going to go?");
+            System.out.println("Where to?");
             System.out.print(">");
             input = InputControl.userInput();
 
-            /*
-             * Inserire qui la gestione degli altri comandi
-             */
-
+            if (input.equals("north")) {
+                currentRoom = currentRoom.getRoomMap("north");
+            } else if (input.equals("south")) {
+                currentRoom = currentRoom.getRoomMap("south");
+            } else if (input.equals("east")) {
+                currentRoom = currentRoom.getRoomMap("east");
+            } else if (input.equals("west")){
+                currentRoom = currentRoom.getRoomMap("west");
+            }
 
             if (input.equals("exit")) {
                 gameEnded = true;
